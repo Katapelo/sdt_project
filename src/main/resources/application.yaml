@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: sdt_project
+  main:
+    banner-mode: off
+
+# Asynchronous Execution Configuration for the Observer Pattern
+  task:
+    execution:
+      pool:
+        core-size: 5
+        max-size: 10
+        queue-capacity: 50
+      thread-name-prefix: "Banking-Async-"
