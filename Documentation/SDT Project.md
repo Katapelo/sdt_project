@@ -37,10 +37,10 @@
 - **The Justification:** By encapsulating each transfer request as a `TransferCommand` object, we can store these objects in a `TransactionHistory` list. This allows the system to easily implement features like "Revert Transaction" (by calling an `undo()` method) and provides a structured way to handle asynchronous processing (queuing commands to be executed when resources are available). This is much more powerful than a simple function call, which lacks the metadata and state needed for audit trails.
 
 3. (1 p) Design a single, comprehensive UML class diagram for the entire project. To highlight the pattern, you can use a note in UML, connected to all the classes involved in that pattern. Try to have a single design class diagram, do not treat the design patterns separately, instead they should be integrated in the entire app design.
-![[Class_Diagram.png]]
+![Class_Diagram.png](Class_Diagram.png)
 
 4.  (0.75p) Create two detailed UML sequence diagrams. These diagrams should illustrate the main use cases of the application.
-![[Sequence1.png]]
+![Sequence1.png](Sequence1.png)
 
-![[Sequence2.png]]
+![Sequence2.png](Sequence2.png)
 
